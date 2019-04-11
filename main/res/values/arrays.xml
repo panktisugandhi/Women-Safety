@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="duration_arrays">
+        <item>1 min</item>
+        <item>2 min</item>
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>15 min</item>
+    </string-array>
+    <string-array name="items">
+        <item>Women Safety</item>
+        <item>Settings</item>
+        <item>Help</item>
+        <item>Feedback</item>
+        <item>Rate app</item>
+    </string-array>
+    <string-array name="length_of_clip_arrays">
+        <item>30 sec</item>
+        <item>1 min</item>
+        <item>2 min</item>
+    </string-array>
+</resources>

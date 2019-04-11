@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/personal"
+            android:icon="@drawable/personaldet"
+            android:title="Personal Detail" />
+        <item
+            android:id="@+id/relative"
+            android:icon="@drawable/relativedet"
+            android:title="Relative Detail" />
+        <item
+            android:id="@+id/setting"
+            android:icon="@drawable/setting"
+            android:title="Settings" />
+        <item
+            android:id="@+id/help"
+            android:icon="@drawable/help"
+            android:title="Help" />
+        <item
+            android:id="@+id/feedback"
+            android:icon="@drawable/feedback"
+            android:title="Feedback" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

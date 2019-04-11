@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainpage">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.NoActionBar" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="#ffffffff"
+        android:paddingLeft="10.0dip"
+        android:paddingTop="60dp"
+        android:paddingRight="10.0dip"
+        android:paddingBottom="10.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="4.0">
+            <Button android:layout_gravity="bottom|center"
+                android:tag="red_button_click"
+                android:background="@drawable/redroundbutton"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="0.0px"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:text="Panic Alert"
+                android:layout_weight="3.0" />
+            <LinearLayout android:gravity="center|top"
+                android:layout_gravity="center|top"
+                android:orientation="horizontal"
+                android:background="#ffffffff"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0px"
+                android:weightSum="2.0"
+                android:layout_weight="1.0">
+                <Button android:layout_gravity="center|top"
+                    android:tag="green_button_click"
+                    android:background="@drawable/greenroundbutton"
+                    android:clickable="true"
+                    android:layout_width="0.0px"
+                    android:layout_height="fill_parent"
+                    android:text="Status Update"
+                    android:layout_weight="1.0"
+                    />
+                <Button android:layout_gravity="center|top"
+                     android:tag="orange_button_click"
+                    android:background="@drawable/orangeroundbutton"
+                    android:clickable="true"
+                    android:layout_width="0.0px"
+                    android:layout_height="fill_parent"
+                    android:text="Being Cautious"
+                    android:layout_weight="1.0"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/content_mainpage" />
+
+</android.support.design.widget.CoordinatorLayout>
