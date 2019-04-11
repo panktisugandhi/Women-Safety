@@ -1,0 +1,23 @@
+                                                        Women Safety
+
+Women Safety Android App helps notify friends and family members, of your location, picture of the surrounding (both front and back camera), Audio/Video of about 30 sec to 2 min and loud Siren, with just a push of a button.
+
+How it Works?
+
+User has to install the App on their android phone and add close family and friends mobile numbers and Email Ids which will be used to alert when user raises an alarm.
+
+The app has 3 circles: Red (Panic), Orange (Suspicious) and Green (Report Normal).
+
+Code Red
+You can configure red to send Location, Picture, Video of 30 sec to 2 min and loud Siren. When user is in distress he/she has to click on the red button that will start fetching details and send SMS to all numbers configured and upload to our cloud and send link to email.
+
+Code Orange
+User should press the Orange button when she is suspicious of the environment just to keep dear once posted of location and surrounding.
+
+Code Green
+Green is to report everything as normal, just in case user wants to alert their dependents periodically.
+
+Make sure you install the app in your, your sisters and parents mobile and have a run through once. Although we wish you never get into such situation but if you ever do you will be better prepared to handle it.
+
+Suggestion?
+If you have suggestions or an idea on how to make Women more safe we will be happy to hear and add it to this app
