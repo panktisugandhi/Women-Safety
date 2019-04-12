@@ -42,6 +42,7 @@
                 android:scaleType="fitCenter"
                 android:adjustViewBounds="true"
                 android:text="Panic Alert"
+                android:id="@+id/redbtn"
                 android:layout_weight="3.0" />
             <LinearLayout android:gravity="center|top"
                 android:layout_gravity="center|top"
@@ -59,19 +60,20 @@
                     android:layout_height="fill_parent"
                     android:text="Status Update"
                     android:layout_weight="1.0"
+                    android:id="@+id/greenbtn"
                     />
                 <Button android:layout_gravity="center|top"
                      android:tag="orange_button_click"
                     android:background="@drawable/orangeroundbutton"
-                    android:clickable="true"
                     android:layout_width="0.0px"
                     android:layout_height="fill_parent"
                     android:text="Being Cautious"
                     android:layout_weight="1.0"
+                    android:id="@+id/orengebtn"
                     />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-    <include layout="@layout/content_mainpage" />
+
 
 </android.support.design.widget.CoordinatorLayout>
