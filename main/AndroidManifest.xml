@@ -29,6 +29,18 @@
         <activity
             android:name=".RegisterActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".personal_detail"
+            android:label="Women Safety"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".gensetting"
+            android:label="Women Safety"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Relative_detail"
+            android:label="Women Safety"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

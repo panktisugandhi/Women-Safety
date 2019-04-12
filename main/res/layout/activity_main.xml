@@ -64,7 +64,7 @@
         android:layout_margin="15dp"
         android:onClick="validateUser"
         android:text="Login"
-        android:textColor="#a72ce9" />
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"

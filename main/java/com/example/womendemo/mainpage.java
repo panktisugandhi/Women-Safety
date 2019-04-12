@@ -91,7 +91,8 @@ public class mainpage extends AppCompatActivity
 
         }
         else if (id== R.id.setting){
-
+                Intent i = new Intent(this,gensetting.class);
+                startActivity(i);
         }
 
         return super.onOptionsItemSelected(item);
@@ -106,18 +107,20 @@ public class mainpage extends AppCompatActivity
         switch (id) {
             case R.id.personal:
                 Toast.makeText(this, "Personal details", Toast.LENGTH_SHORT).show();
-//                Intent intent1 = new Intent(mainpage.this,personal_detail.class);
-//                startActivity(intent1);
+                Intent intent1 = new Intent(mainpage.this,personal_detail.class);
+                startActivity(intent1);
                 break;
 
             case R.id.relative:
                 Toast.makeText(this, "Relative details", Toast.LENGTH_SHORT).show();
+                Intent inten = new Intent(mainpage.this,Relative_detail.class);
+                startActivity(inten);
                 break;
 
             case  R.id.setting:
                 Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show();
-//                Intent i = new Intent(mainpage.this, gensetting.class);
-//                startActivity(i);
+                Intent i = new Intent(mainpage.this, gensetting.class);
+                startActivity(i);
                 break;
 
             case R.id.help:

@@ -114,7 +114,6 @@
         android:layout_marginTop="20dp"
         android:onClick="registerUser"
         android:text="Create Account"
-        android:textColor="#a72ce9"
         android:textStyle="bold" />
 
 
