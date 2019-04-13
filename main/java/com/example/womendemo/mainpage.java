@@ -1,12 +1,11 @@
 package com.example.womendemo;
 
-import android.annotation.SuppressLint;
-import android.content.Context;
+
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
+import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -22,6 +21,7 @@ import android.widget.Toast;
 public class mainpage extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    MediaPlayer player;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,18 +36,24 @@ public class mainpage extends AppCompatActivity
         redbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                player = MediaPlayer.create(mainpage.this,R.raw.siren);
+                player.start();
                 Toast.makeText(mainpage.this, "Pressed Red Panic Alert", Toast.LENGTH_SHORT).show();
             }
         });
         greenbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                player = MediaPlayer.create(mainpage.this,R.raw.siren);
+                player.start();
                 Toast.makeText(mainpage.this, "Pressed Green Status Update", Toast.LENGTH_SHORT).show();
             }
         });
         orangebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                player = MediaPlayer.create(mainpage.this,R.raw.siren);
+                player.start();
                 Toast.makeText(mainpage.this, "Pressed Orange Cautious", Toast.LENGTH_SHORT).show();
             }
         });
@@ -81,20 +87,21 @@ public class mainpage extends AppCompatActivity
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.siren) {
-
-        }
-        else if (id== R.id.setting){
-                Intent i = new Intent(this,gensetting.class);
+        switch (id) {
+            //noinspection SimplifiableIfStatement
+            case R.id.siren: {
+                player = MediaPlayer.create(this,R.raw.siren);
+                player.setLooping(true);
+                player.start();
+            break;
+            }
+            case R.id.setting: {
+                Intent i = new Intent(this, gensetting.class);
                 startActivity(i);
+                break;
+            }
         }
-
         return super.onOptionsItemSelected(item);
     }
 
@@ -154,5 +161,6 @@ public class mainpage extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
 
 }
