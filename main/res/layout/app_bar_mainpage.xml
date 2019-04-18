@@ -22,7 +22,7 @@
 
     <LinearLayout android:gravity="center_horizontal"
         android:layout_gravity="center_horizontal"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:background="#ffffffff"
         android:paddingLeft="10.0dip"
         android:paddingTop="60dp"
@@ -30,6 +30,14 @@
         android:paddingBottom="10.0dip"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv2"/>
         <LinearLayout android:gravity="center_horizontal"
             android:layout_gravity="center_horizontal"
             android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="4.0">
@@ -43,7 +51,8 @@
                 android:adjustViewBounds="true"
                 android:text="Panic Alert"
                 android:id="@+id/redbtn"
-                android:layout_weight="3.0" />
+                android:layout_weight="3.0"
+                android:onClick="call"/>
             <LinearLayout android:gravity="center|top"
                 android:layout_gravity="center|top"
                 android:orientation="horizontal"
@@ -61,7 +70,7 @@
                     android:text="Status Update"
                     android:layout_weight="1.0"
                     android:id="@+id/greenbtn"
-                    />
+                    android:onClick="message" />
                 <Button android:layout_gravity="center|top"
                      android:tag="orange_button_click"
                     android:background="@drawable/orangeroundbutton"
@@ -70,7 +79,7 @@
                     android:text="Being Cautious"
                     android:layout_weight="1.0"
                     android:id="@+id/orengebtn"
-                    />
+                    android:onClick="sendemail"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

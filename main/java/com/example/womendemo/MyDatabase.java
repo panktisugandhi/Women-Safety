@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.widget.Toast;
 
 /**
- * Created by Jitendra on 13/08/2018.
+ * Created by pankti on 8-4-19.
  */
 public class MyDatabase extends SQLiteOpenHelper
 {

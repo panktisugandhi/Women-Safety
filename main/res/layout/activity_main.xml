@@ -30,7 +30,6 @@
         android:layout_height="40dp"
         android:layout_margin="10dp"
         android:background="@drawable/editable_shape"
-
         android:ems="13"
         android:gravity="center"
         android:hint="Email"

@@ -15,5 +15,14 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:src="@drawable/womenlogo" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="@string/app_name"
+        android:textColor="#F00"
+        android:textSize="30sp"
+        />
 
 </LinearLayout>

@@ -3,6 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.womendemo">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <application
         android:allowBackup="true"
         android:icon="@drawable/womenlogo"
@@ -38,9 +42,12 @@
             android:label="Women Safety"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Relative_detail"
+            android:name=".Relativedetail"
             android:label="Women Safety"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".help"
+            android:label="Women Safety"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>
